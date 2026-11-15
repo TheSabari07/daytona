@@ -4,8 +4,8 @@
   "description": "A coding agent powered by the Claude Agent SDK and Daytona sandboxes.",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "npm run build && node dist/index.js",
+    "build": "node init && tsc",
+    "start": "node init && npm run build && node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
